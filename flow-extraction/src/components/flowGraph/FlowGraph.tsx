@@ -235,12 +235,12 @@ const FlowGraph: React.FC = () => {
         }}
       >
         <div className="button-container">
-          <button onClick={AddNode}>Add Node</button>
+          <button onClick={AddNode}>Node</button>
           <button onClick={() => DeleteNode(selectedNodeId)}>
-            Delete Node
+            Delete
           </button>
           <button onClick={() => DuplicateNode(selectedNodeId)}>
-            Duplicate Node
+            Duplicate
           </button>
         </div>
         <UpdateNode
