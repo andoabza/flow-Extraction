@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+<h1>Functionality Overview</h1>
+This React application is designed to perform two main functions: menu extraction from text and visualization using ReactFlow.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Menu Extraction</h2>
+The application provides users with a text area where they can paste text containing potential menu structures. Upon clicking the "Extract" button, the application uses regular expressions to identify menu items formatted as `<\number>\ . <\Menu Text>\` . It then processes the input text, extracts valid menu items, and displays them in a structured format in the left panel. If no valid menu items are found, a message stating "No valid menu items found" is displayed.
 
-## Available Scripts
+<h2>ReactFlow Visualization</h2>
+The extracted menu items are visualized using ReactFlow in the center panel of the application. Each menu item is represented as a node on the canvas. Users can interact with these nodes by performing various actions:
 
-In the project directory, you can run:
+### Adding Nodes
+Users can click the "**Add Node**" button to add a new node to the canvas at a random position.
 
-### `npm start`
+### Deleting Nodes
+By selecting a node and clicking the "**Delete Node**" button, users can remove the selected node from the canvas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Duplicating Nodes
+Users can duplicate a selected node by clicking the "**Duplicate Node**" button, creating a copy of the selected node positioned next to it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Updating Node Properties
+The application provides controls to update node properties such as name and background color. Users can input a new name for the node and select a background color from a color picker.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
